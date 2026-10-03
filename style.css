@@ -1,0 +1,16 @@
+/* Fonts */
+@font-face {
+  font-family: "VCR Font";
+  src: url("fonts/VCR_OSD_Mono.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "Lemon Milk";
+  src: url("fonts/Lemon_Milk.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "VCR Font", sans-serif;
+}
