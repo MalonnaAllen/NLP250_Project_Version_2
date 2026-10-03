@@ -1,10 +1,18 @@
+/* Color Guide Reference
+  - Black: #1f1f1f
+  - Blue: #0029bf
+  - White: #f5f5f5
+*/
+
 /* Fonts */
 @font-face {
   font-family: "VCR Font";
   src: url("fonts/VCR_OSD_Mono.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
 
+@font-face {
   font-family: "Lemon Milk";
   src: url("fonts/Lemon_Milk.otf") format("opentype");
   font-weight: normal;
@@ -12,5 +20,34 @@
 }
 
 body {
+  font-family: "Lemon Milk", sans-serif;
+  margin: 0;
+}
+
+/* Navigation */
+.navbar {
+  box-sizing: border-box;
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  padding: 16px 24px;
   font-family: "VCR Font", sans-serif;
+  background-color: #1f1f1f;
+  border: 2px solid #f5f5f5;
+}
+
+.navbar a {
+  flex: 1;
+  padding: 12px 16px;
+  color: #f5f5f5;
+  text-align: center;
+  text-decoration: none;
+  background-color: #1f1f1f;
+  border: 2px solid #f5f5f5;
+}
+
+.navbar a:hover,
+.navbar a:focus-visible {
+  color: #f5f5f5;
+  background-color: #0029bf;
 }
