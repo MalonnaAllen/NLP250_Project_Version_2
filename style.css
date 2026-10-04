@@ -119,4 +119,16 @@ a {
   color: #adadad;
   text-align: center;
   font-size: 60px;
+  display: flex;
+  gap: 16px;
+}
+
+.sharp-blink {
+  animation: sharp-blink-animation 1s steps(1, start) infinite;
+}
+
+@keyframes sharp-blink-animation {
+  50% {
+    visibility: hidden;
+  }
 }
