@@ -1,6 +1,6 @@
 /* Color Guide Reference
   - Black: #1f1f1f
-  - White: #f5f5f5
+  - White: #adadad
   - Blue: #0029bf
 */
 
@@ -33,7 +33,7 @@ a {
   cursor: url("images/select.cur"), pointer;
 }
 
-/* Navigation Bar*/
+/* Navigation Bar */
 .navbar {
   box-sizing: border-box;
   display: flex;
@@ -42,22 +42,79 @@ a {
   padding: 16px 24px;
   font-family: "VCR Font", sans-serif;
   background-color: #1f1f1f;
-  border: 2px solid #f5f5f5;
+  border: 2px solid #adadad;
   font-size: 30px;
 }
 
 .navbar a {
   flex: 1;
   padding: 12px 16px;
-  color: #f5f5f5;
+  color: #adadad;
   text-align: center;
   text-decoration: none;
   background-color: #1f1f1f;
-  border: 2px solid #f5f5f5;
+  border: 2px solid #adadad;
 }
 
 .navbar a:hover,
 .navbar a:focus-visible {
-  color: #f5f5f5;
+  color: #adadad;
   background-color: #0029bf;
+}
+
+/* Credit Content */
+.credit-content {
+  padding: 24px;
+}
+
+/* Ending Content */
+.ending-content {
+  padding: 24px;
+  font-family: "VCR Font", sans-serif;
+  color: #adadad;
+}
+
+.ending-card {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  column-gap: 16px;
+  align-items: center;
+  padding: 16px;
+  font-family: "VCR Font", sans-serif;
+  color: #adadad;
+  border: 2px solid #adadad;
+  margin-bottom: 16px;
+}
+
+.ending-card::before {
+  content: "";
+  width: 64px;
+  height: 64px;
+  border: 2px solid #adadad;
+  grid-row: 1 / span 2;
+  /* Placeholder for an image or icon */
+}
+
+.ending-card h2,
+p {
+  margin: 0 0 4px;
+}
+
+/* Home Background */
+.home-background {
+  background-color: #1f1f1f;
+  background-image: url("images/background.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* Home Content */
+.home-content {
+  padding: 24px;
+  font-family: "VCR Font", sans-serif;
+  color: #adadad;
+  text-align: center;
+  font-size: 60px;
 }
