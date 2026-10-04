@@ -12,15 +12,8 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Lemon Milk";
-  src: url("fonts/Lemon_Milk.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
-  font-family: "Lemon Milk", sans-serif;
+  font-family: "VCR Font", sans-serif;
   margin: 0;
 }
 
@@ -40,7 +33,6 @@ a {
   gap: 12px;
   width: 100%;
   padding: 16px 24px;
-  font-family: "VCR Font", sans-serif;
   background-color: #1f1f1f;
   border: 2px solid #adadad;
   font-size: 30px;
@@ -62,15 +54,15 @@ a {
   background-color: #0029bf;
 }
 
-/* Credit Content */
+/* Credit Page */
 .credit-content {
   padding: 24px;
+  color: #adadad;
 }
 
-/* Ending Content */
+/* Ending Page */
 .ending-content {
   padding: 24px;
-  font-family: "VCR Font", sans-serif;
   color: #adadad;
 }
 
@@ -80,10 +72,10 @@ a {
   column-gap: 16px;
   align-items: center;
   padding: 16px;
-  font-family: "VCR Font", sans-serif;
   color: #adadad;
   border: 2px solid #adadad;
   margin-bottom: 16px;
+  background-color: #1f1f1f;
 }
 
 .ending-card::before {
@@ -93,14 +85,23 @@ a {
   border: 2px solid #adadad;
   grid-row: 1 / span 2;
   /* Placeholder for an image or icon */
+  background-color: #1f1f1f;
 }
 
 .ending-card h2,
-p {
+.ending-card p {
   margin: 0 0 4px;
 }
 
-/* Home Background */
+.ending-background {
+  background-color: #1f1f1f;
+  background-image: url("images/background.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+/* Home Page */
 .home-background {
   background-color: #1f1f1f;
   background-image: url("images/background.gif");
@@ -110,10 +111,8 @@ p {
   min-height: 100vh;
 }
 
-/* Home Content */
 .home-content {
   padding: 24px;
-  font-family: "VCR Font", sans-serif;
   color: #adadad;
   text-align: center;
   font-size: 60px;
