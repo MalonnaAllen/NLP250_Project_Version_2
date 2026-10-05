@@ -2,6 +2,7 @@
   - Black: #1f1f1f
   - White: #adadad
   - Blue: #0029bf
+  - Gray: #666666
 */
 
 /* Fonts */
@@ -13,8 +14,11 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: "VCR Font", sans-serif;
   margin: 0;
+  min-height: 100vh;
 }
 
 /* Cursors */
@@ -30,82 +34,108 @@ a {
 .background {
   background-color: #1f1f1f;
   background-image: url("images/background.gif");
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
 }
 
 /* Navigation Bar */
 .navbar {
-  box-sizing: border-box;
-  display: flex;
-  gap: 12px;
-  width: 100%;
-  padding: 16px 24px;
   background-color: #1f1f1f;
   border: 2px solid #adadad;
+  box-shadow: 0 0 4px #666666;
+  box-sizing: border-box;
+  display: flex;
   font-size: 30px;
+  gap: 12px;
+  padding: 16px 24px;
+  width: 100%;
 }
 
 .navbar a {
-  flex: 1;
-  padding: 12px 16px;
-  color: #adadad;
-  text-align: center;
-  text-decoration: none;
   background-color: #1f1f1f;
   border: 2px solid #adadad;
+  box-shadow: 2px 2px 4px #666666;
+  color: #adadad;
+  flex: 1;
+  padding: 12px 16px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .navbar a:hover,
 .navbar a:focus-visible {
-  color: #adadad;
   background-color: #0029bf;
+  color: #adadad;
+}
+
+/* Footer */
+footer {
+  align-items: center;
+  background-color: #1f1f1f;
+  border: 2px solid #adadad;
+  box-shadow: 0 0 4px #666666;
+  color: #adadad;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  margin-top: auto;
 }
 
 /* Credit Page */
 .credit-content {
-  padding: 24px;
   color: #adadad;
+  padding: 24px;
+}
+
+.credit-content h1 {
+  text-shadow: 0 0 4px #adadad;
 }
 
 .credit-card {
+  background-color: #1f1f1f;
+  border: 2px solid #adadad;
+  box-shadow: 0 0 4px #adadad;
+  box-shadow: 2px 2px 4px #666666;
+  color: #adadad;
   display: grid;
   grid-template-columns: 1fr;
-  padding: 16px;
-  color: #adadad;
-  border: 2px solid #adadad;
   margin-bottom: 16px;
-  background-color: #1f1f1f;
+  padding: 16px;
 }
 
 /* Ending Page */
 .ending-content {
-  padding: 24px;
   color: #adadad;
+  padding: 24px;
+}
+
+.ending-content h1 {
+  text-shadow: 0 0 4px #adadad;
 }
 
 .ending-card {
+  align-items: center;
+  background-color: #1f1f1f;
+  border: 2px solid #adadad;
+  box-shadow: 2px 2px 4px #666666;
+  color: #adadad;
+  column-gap: 16px;
   display: grid;
   grid-template-columns: 64px 1fr;
-  column-gap: 16px;
-  align-items: center;
-  padding: 16px;
-  color: #adadad;
-  border: 2px solid #adadad;
   margin-bottom: 16px;
-  background-color: #1f1f1f;
+  padding: 16px;
 }
 
 .ending-card::before {
-  content: "";
-  width: 64px;
-  height: 64px;
-  border: 2px solid #adadad;
-  grid-row: 1 / span 2;
   /* Placeholder for an image or icon */
   background-color: #1f1f1f;
+  border: 2px solid #adadad;
+  content: "";
+  grid-row: 1 / span 2;
+  height: 64px;
+  width: 64px;
 }
 
 .ending-card h2,
@@ -115,14 +145,15 @@ a {
 
 /* Home Page */
 .home-content {
-  padding: 24px;
   color: #adadad;
-  text-align: center;
-  font-size: 60px;
   display: flex;
+  font-size: 60px;
   gap: 16px;
+  padding: 24px;
+  text-align: center;
 }
 
+/* Animations */
 .sharp-blink {
   animation: sharp-blink-animation 1s steps(1, start) infinite;
 }
