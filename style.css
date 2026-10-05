@@ -1,5 +1,6 @@
 /* Color Guide Reference
   - Black: #1f1f1f
+  - Dark Black: #0f0f0f
   - White: #adadad
   - Blue: #0029bf
   - Gray: #666666
@@ -134,7 +135,7 @@ footer {
 
 .ending-card::before {
   /* Placeholder for ending icon */
-  background-color: #1f1f1f;
+  background-color: #0f0f0f;
   border: 2px solid #adadad;
   content: "";
   grid-row: 1 / span 2;
@@ -169,3 +170,12 @@ footer {
 }
 
 /* Game Page */
+.game-container {
+  aspect-ratio: 16 / 9;
+  background-color: #0f0f0f;
+  border: 2px solid #adadad;
+  box-shadow: 0 0 4px #666666;
+  box-sizing: border-box;
+  margin: 64px auto;
+  width: min(90%, 1000px);
+}
