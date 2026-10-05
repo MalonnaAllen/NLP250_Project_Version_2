@@ -13,6 +13,7 @@
   font-style: normal;
 }
 
+/* Page Layout */
 body {
   display: flex;
   flex-direction: column;
@@ -50,7 +51,10 @@ a {
   font-size: 30px;
   gap: 12px;
   padding: 16px 24px;
+  position: sticky;
+  top: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .navbar a {
@@ -105,7 +109,7 @@ footer {
   padding: 16px;
 }
 
-/* Ending Page */
+/* Endings Page */
 .ending-content {
   color: #adadad;
   padding: 24px;
@@ -129,7 +133,7 @@ footer {
 }
 
 .ending-card::before {
-  /* Placeholder for an image or icon */
+  /* Placeholder for ending icon */
   background-color: #1f1f1f;
   border: 2px solid #adadad;
   content: "";
@@ -163,3 +167,5 @@ footer {
     visibility: hidden;
   }
 }
+
+/* Game Page */
