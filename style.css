@@ -129,10 +129,14 @@ footer {
   box-shadow: 2px 2px 4px #666666;
   color: #adadad;
   column-gap: 16px;
-  display: grid;
+  display: none;
   grid-template-columns: 64px 1fr;
   margin-bottom: 16px;
   padding: 16px;
+}
+
+.ending-card.is-unlocked {
+  display: grid;
 }
 
 .ending-card::before {
@@ -143,6 +147,10 @@ footer {
   grid-row: 1 / span 2;
   height: 64px;
   width: 64px;
+}
+
+.ending-card h2 {
+  color: #c01600;
 }
 
 .ending-card h2,
@@ -173,13 +181,58 @@ footer {
 
 /* Game Page */
 .game-container {
+  color: #adadad;
   background-color: #0f0f0f;
   border: 2px solid #adadad;
   box-shadow: 0 0 4px #666666;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   margin: 30px auto;
   height: 500px;
+  overflow: auto;
+  padding: 40px;
   width: min(90%, 1000px);
+}
+
+.prompt-text {
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0 0 32px;
+}
+
+.choice-list {
+  display: grid;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.game-choice {
+  border: 2px solid transparent;
+  display: flex;
+  font-size: 22px;
+  gap: 12px;
+  line-height: 1.4;
+  padding: 12px 16px;
+}
+
+.game-choice.is-selected {
+  background-color: #0029bf;
+  border-color: #adadad;
+}
+
+.choice-marker {
+  display: inline-block;
+  min-width: 16px;
+}
+
+.choice-status {
+  color: #666666;
+  font-size: 16px;
+  margin: auto 0 0;
+  text-align: right;
 }
 
 .button-container {
@@ -208,4 +261,20 @@ footer {
 
 .button-container button:active {
   box-shadow: inset 0 0 6px #0e0d0d;
+}
+
+@media (max-width: 600px) {
+  .game-container {
+    height: 450px;
+    padding: 24px;
+  }
+
+  .button-container {
+    gap: 12px;
+  }
+
+  .button-container button {
+    font-size: 18px;
+    padding: 10px 16px;
+  }
 }

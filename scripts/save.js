@@ -6,5 +6,5 @@ saveButton.addEventListener("click", () => {
   alert("Your progress has been saved.");
 
   // Save game progress to local storage.
-  // localStorage.setItem("saveGame", JSON.stringify({progress: "saved"}));
+  localStorage.setItem("saveGame", JSON.stringify({progress: "saved"}));
 });
