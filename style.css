@@ -1,9 +1,11 @@
 /* Color Guide Reference
   - Black: #1f1f1f
   - Dark Black: #0f0f0f
-  - White: #adadad
+  - Light Grey: #adadad
   - Blue: #0029bf
   - Gray: #666666
+  - White: #cfcfcf
+  - Red: #c01600
 */
 
 /* Global Rules */
@@ -97,6 +99,7 @@ footer {
 }
 
 .credit-content h1 {
+  color: #cfcfcf;
   text-shadow: 0 0 4px #adadad;
 }
 
@@ -114,7 +117,7 @@ footer {
 
 /* Endings Page */
 .ending-content {
-  color: #adadad;
+  color: #cfcfcf;
   padding: 24px;
 }
 
@@ -149,6 +152,25 @@ footer {
   width: 64px;
 }
 
+.ending-card[data-ending="1"]::before {
+  background-image: url("images/coward.png");
+  background-position: center;
+  background-size: cover;
+}
+/* 
+.ending-card[data-ending="2"]::before {
+  background-image: url("images/TBD.png");
+  background-position: center;
+  background-size: cover;
+}
+ */
+
+.ending-card[data-ending="3"]::before {
+  background-image: url("images/smile.png");
+  background-position: center;
+  background-size: cover;
+}
+
 .ending-card h2 {
   color: #c01600;
 }
@@ -160,7 +182,7 @@ footer {
 
 /* Home Page */
 .home-content {
-  color: #adadad;
+  color: #cfcfcf;
   display: flex;
   font-size: 60px;
   gap: 16px;
@@ -181,7 +203,7 @@ footer {
 
 /* Game Page */
 .game-container {
-  color: #adadad;
+  color: #cfcfcf;
   background-color: #0f0f0f;
   border: 2px solid #adadad;
   box-shadow: 0 0 4px #666666;

@@ -6,7 +6,7 @@ const selectButton = document.querySelector(".select-button");
 const scenes = {
   intro: {
     prompt:
-      "There's a knock at the door. You take your time answering it, a soaked and dirty package lays at your doorstop.",
+      "There's a knock at the door. You take your time answering it, a soaked and dirty package lays at your doorstep.",
     choices: [
       {text: "Bring the package inside?", next: "opened"},
       {text: "Leave it there.", next: "ending1"},
