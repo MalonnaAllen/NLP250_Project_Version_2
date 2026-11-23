@@ -115,6 +115,29 @@ footer {
   padding: 16px;
 }
 
+.credit-card h2 {
+  cursor: pointer;
+  margin: 0;
+  user-select: none;
+}
+
+.credit-card h2::after {
+  content: " +";
+  float: right;
+}
+
+.credit-card.active h2::after {
+  content: " -";
+}
+
+.credit-card p {
+  display: none;
+}
+
+.credit-card.active p {
+  display: block;
+}
+
 /* Endings Page */
 .ending-content {
   color: #cfcfcf;
